@@ -25,7 +25,7 @@
   > Nodes : People
   > Edges : Friendship, marital, or family ties
   那么关键在python 如何基于nodes 和edges 来处理network, networkx。
-  'import networkx as nx
+  'import networkx as nx  
   G = nx.Graph()
   G.add_edges('A', 'B')
   G.add_edges('B', 'C') '
@@ -47,7 +47,7 @@
   > In NetworkX, we can represent these types of networks also by using the class Graph
   > But what have to do is when we add an edge, for example the edge A, B, we have to add an attribute weight as well
   >  import networkx as nx
-  `G = nx.Graph()
+ ' G = nx.Graph()
   G.add_edges('A', 'B', weight=6)
   G.add_edges('B', 'C', weight=13)'
   *可以看出network中edges是储存重要信息的对象，通过edges的性质来对network进行分类的。networkX中可以按照不同的类型的network构建不同的类，这些类主要是class Graph 和DiGraph 两个我感兴趣的类。在不同的类中，主要通过类的方法为edges 添加属性 attributes来描述network的。 比如，加weight，加relation 等属性*
@@ -58,7 +58,7 @@
 >Coworker
 >Neighbor
 
-`import networkx as nx
+'import networkx as nx
  G = nx.Graph()
  G.add_edges('A', 'B', relation='friend')
  G.add_edges('B', 'C', relation='coworker')
@@ -70,12 +70,12 @@
 >Intuition for multigraphs is that for a single pair of of nodes, there is no reason why they shouldn't be able to have many different relationships at the same time
 >MultiGraphs Network is a network where multiple edges can connect the same pair of nodes. They're also called parallel edges
 这种MutilGraph 在networkX中有 MultiGraph类来描述
- ` import networkx as nx
+ ' import networkx as nx
   G = nx.MultiGraph()
   G.add_edges('A', 'B', relation='friend')
   G.add_edges('A', 'B', relation='neighbor')
   G.add_edges('G', 'F', relation='family')
-  G.add_edges('G', 'F', relation='coworker') '
+  G.add_edges('G', 'F', relation='coworker') ' *
   
 
  
