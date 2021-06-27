@@ -3,4 +3,11 @@
 # 1 DataFrame
 ## 1.1 Pandas_DataFrame 基础知识
 以下内容来自[Pandas_DataFrame 基础知识](https://www.jianshu.com/p/8024ceef4fe2). 这主要是理解pandas的DataFrame的函数,因为DataFrame是我最常用的数据表.
+### 1.1.1 Pandas DataFrame 创建
+*DataFrame 的创建主要有两种(对我目前来看):一是根据dict来创建,二是根据读取csv,txt来创建*
+  > 根据字典创建
 
+
+
+
+  > 读取文件CSV创建
