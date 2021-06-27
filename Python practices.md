@@ -77,4 +77,13 @@ array([[2000, 'Ohio', 1.5, nan],
 10   8   9       1`
 这就将文件对入python,为DataFrame格式,然后,用networkX([from_pandas_edgelist()](https://vimsky.com/examples/detail/python-method-networkx.from_pandas_edgelist.html))对DataFrame文件进行画图,以及measurement.
 
+ ### 1.1.2 Pandas DataFrame 性质
+ *索引:根据变量名索引*
+ `frame2['year']'
+ (其他略),总之DataFrame提供了多种形式的索引方式,比如条件索引,修改等
+ *将函数应用到各列或者行所形成的一维数组上.*
+ >首先介绍的是apply()方法  
+>然后是map()方法
+ (略)详见[Pandas.DataFrame] https://pandas.pydata.org/pandas-docs/stable/reference/api/pandas.DataFrame.apply.html
+ *DataFrame中的实现了sum、mean、max等方法
  
